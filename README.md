@@ -1,5 +1,5 @@
 # nanoservices
-Aplicação WEB orientada a eventos e completamente Serverless.
+Event-driven and fully Serverless WEB application.
 
 # objective
 
