@@ -37,7 +37,7 @@ const putObject = (buffer, filename) => {
         }
         return res({
           bucket: BUCKET,
-          key: filename,
+          key: "filter-" + filename,
         });
       }
     );
