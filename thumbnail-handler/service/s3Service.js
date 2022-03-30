@@ -28,7 +28,7 @@ const putObject = (buffer, filename) => {
     s3.putObject(
       {
         Bucket: BUCKET,
-        Key: filename,
+        Key: "thumbnail-" + filename,
         Body: buffer,
       },
       (err, data) => {
