@@ -1,0 +1,22 @@
+{
+  "Records": [
+    {
+      "EventSource": "aws:sns",
+      "EventVersion": "1.0",
+      "EventSubscriptionArn": "arn:aws:sns:us-east-2:583919085126:s3-nanoservices-imagens-put:bb542b2c-a054-4700-9e9d-514b4f48aad4",
+      "Sns": {
+        "Type": "Notification",
+        "MessageId": "f59f2060-2885-5a3c-8aa6-7adeecf4fe3f",
+        "TopicArn": "arn:aws:sns:us-east-2:583919085126:s3-nanoservices-imagens-put",
+        "Subject": "Amazon S3 Notification",
+        "Message": "{\"Records\":[{\"eventVersion\":\"2.1\",\"eventSource\":\"aws:s3\",\"awsRegion\":\"us-east-2\",\"eventTime\":\"2022-03-30T20:48:47.739Z\",\"eventName\":\"ObjectCreated:Put\",\"userIdentity\":{\"principalId\":\"AWS:AIDAYP5CKEZDL5WOC5IQ7\"},\"requestParameters\":{\"sourceIPAddress\":\"177.188.32.29\"},\"responseElements\":{\"x-amz-request-id\":\"ACN4MSQ1S00XAGP7\",\"x-amz-id-2\":\"MqSpf/Mej8gQ44kWCUIQqfWWtMQNnGj7P1trgKeLxDemvhzJ2K7vXrdKNEezkHNTYm65W7BbXJyOdG3Z2I3crHUo/AMDaTXO\"},\"s3\":{\"s3SchemaVersion\":\"1.0\",\"configurationId\":\"put-object-notification\",\"bucket\":{\"name\":\"nanoservices-images-fen\",\"ownerIdentity\":{\"principalId\":\"AZJMVHXOW28RG\"},\"arn\":\"arn:aws:s3:::nanoservices-images-fen\"},\"object\":{\"key\":\"tenisnikepreto.jpg\",\"size\":84660,\"eTag\":\"642449073d05ef7ecdb245bed8ff7fbb\",\"sequencer\":\"006244C22FB4869E2C\"}}}]}",
+        "Timestamp": "2022-03-30T20:48:49.480Z",
+        "SignatureVersion": "1",
+        "Signature": "cDckY4xtrX6GIIW6VVzJMIlzyOlm0a18J6ypyj7ZxSbt3ESEpLz5oIFN73czoqDMkgfU6Y3SQzSjOyMbBrX+omUxb81Lsy9KvEpYQXlMtH2GtVJDBh7PDa7RWQobKFSCJfxu9lxehMY+AA6S2rIJ81KEHit+XZNSvwLktH+IGuh5m7TCxx7837Wnl/2aXTwj0bP2w1lbCivWtyMLuhIn67XTXgNiWmFrAi7rXbF4/HepR3nh1nML1vS/LR80O+QyPXfR7ii8EJCLxmVEqU8eQtwzrTKgZDkfA+f8cyjEIIcgG4rXt2qoxlel3DTcbfXp3dYnUpQxRnFrs0HHR7eCMg==",
+        "SigningCertUrl": "https://sns.us-east-2.amazonaws.com/SimpleNotificationService-7ff5318490ec183fbaddaa2a969abfda.pem",
+        "UnsubscribeUrl": "https://sns.us-east-2.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:us-east-2:583919085126:s3-nanoservices-imagens-put:bb542b2c-a054-4700-9e9d-514b4f48aad4",
+        "MessageAttributes": {}
+      }
+    }
+  ]
+}
