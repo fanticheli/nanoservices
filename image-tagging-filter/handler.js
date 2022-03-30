@@ -1,6 +1,7 @@
 "use strict";
 
 const rekognitionService = require("./service/rekognitionService");
+const sqsService = require("./service/sqsService");
 
 module.exports.tag = async (event) => {
   const s3Info = JSON.parse(event.Records[0].Sns.Message);
@@ -9,10 +10,15 @@ module.exports.tag = async (event) => {
 
   const labels = await rekognitionService.detectLabels(bucket, key);
 
-  console.log("LABELS", labels);
+  const item = {};
+  item.key = key;
+  item.labels = labels;
+  item.eventType = "TAG_EVENT";
+
+  await sqsService.putMessage(item);
 
   return {
-    message: "Go Serverless v1.0! Your function executed successfully!",
+    message: "Tags capturadas com sucesso!",
     event,
   };
 };
