@@ -28,7 +28,7 @@ const putObject = (buffer, filename) => {
     s3.putObject(
       {
         Bucket: BUCKET,
-        Key: "filter-" + filename,
+        Key: filename,
         Body: buffer,
       },
       (err, data) => {
@@ -37,7 +37,7 @@ const putObject = (buffer, filename) => {
         }
         return res({
           bucket: BUCKET,
-          key: "filter-" + filename,
+          key: filename,
         });
       }
     );
